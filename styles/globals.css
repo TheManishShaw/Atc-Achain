@@ -1,0 +1,340 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* global setting */
+::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #2E437C;
+    border-radius: 10px;
+  }
+
+
+/*home background */
+.bg-gridLine {
+    background-image: url(/assets/icons/svg/bg-gridline.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.drop-shawdow {
+    box-shadow: 0 4px 32px 0 #00beed;
+    backdrop-filter: blur(8px);
+}
+
+.footer-bg{
+  background-image: url(/assets/images/background/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.product-page-banner {
+  background-image: url(/assets/icons/svg/productPageBanner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.industrie-page-banner {
+  background-image: url(/assets/images/background/industries.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-bg{
+  background-image: url(/assets/icons/svg/productBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.variant-bg{
+  background-image: url(/assets/icons/svg/variantbg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.variant-bg-right{
+  background-image: url(/assets/icons/svg/variantBgRight.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+.industry-solution-bg{
+  background-image: url(/assets/icons/svg/product-solution-bg-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.home-industry-solution-bg{
+  background-image: url(/assets/icons/svg/homeIndusrtyCardBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.product-section-bg {
+  background-image: url(/assets/images/global-elements/element-1.png);
+  background-repeat: no-repeat;
+  background-position: start; 
+}
+
+.contact-section-bg {
+  background-image: url(/assets/images/global-elements/element-2.svg);
+  background-repeat: no-repeat;
+  background-position: start; 
+}
+
+.testimonials-section-bg {
+  background-image: url(/assets/images/background/testimonials-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.about-section-bg {
+  background-image: url(/assets/icons/svg/aboutPageSection.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.sandbox {
+  max-width: 67rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sandbox__carousel {
+  background-color: var(--background-code);
+}
+.sandbox__carousel {
+  position: relative;
+}
+@media (min-width: 750px) {
+  .sandbox__carousel {
+    border-radius: 0.4rem;
+  }
+}
+
+
+.embla {
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+  --slide-height: 19rem;
+  padding: 1.6rem;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+ 
+
+ 
+
+}
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+  position: relative;
+}
+.embla__slide__img {
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  object-fit: cover;
+}
+.embla__slide__number {
+  width: 4.6rem;
+  height: 4.6rem;
+  z-index: 1;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border-radius: 50%;
+  background-color: rgba(var(--background-site-rgb-value), 0.85);
+  line-height: 4.6rem;
+  font-weight: 900;
+  text-align: center;
+  pointer-events: none;
+}
+.embla__slide__number > span {
+  color: var(--brand-primary);
+  background-image: linear-gradient(
+    45deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.6rem;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.embla__dot,
+.embla__button {
+
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.embla__dots {
+  z-index: 1;
+  bottom: 1.2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.embla__dot {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.embla__dot:after {
+  background: var(--background-site);
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 0.3rem;
+  content: '';
+}
+.embla__dot--selected:after {
+  background: linear-gradient(
+    45deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+}
+.embla__button {
+  z-index: 1;
+  color: var(--background-site);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+}
+.embla__button--prev {
+  background-color: #2E437C !important;
+  border-radius: 25px;
+  opacity: 75%;
+  left: 1.6rem;
+}
+.embla__button--next {
+  background-color: #2E437C !important;
+  opacity: 75%;
+  border-radius: 25px;
+  right: 1.6rem;
+}
+.embla__button:disabled {
+  opacity: 0.2;
+}
+.embla__button__svg {
+  width: 50%;
+  height: 50%;
+}
+
+.slick-dots li{
+ 
+  width: 90px !important;
+  height: 60px !important;
+ 
+}
+
+
+/* industry page */
+.industry {
+  background-image: url("/assets/icons/svg/shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.industryactive {
+  background-image: url("/assets/icons/svg/shape2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+.productdetail {
+  background: #e5e7ebba;
+}
+
+#custom_carousol .group span {
+  background-color: #2e437c;
+  
+}
+
+
+
+/* slider in search page  */
+
+.splide__arrow{
+  background-color: #2e437c!important;
+  color: #fff !important;
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.splide__arrow svg{
+  height: 20px !important;
+  width: 20px !important;
+  fill: #fff!important;
+}
+.iWANdS {
+  max-height: 300px;
+  min-height: 300px;
+}
+.jlBvJW {
+  padding: 20px 0px;
+
+}
+.jlBvJW:hover{
+  background-color: #fff;
+  color: #fff;
+}
+
+ svg .transform {
+  fill:#fff
+}
